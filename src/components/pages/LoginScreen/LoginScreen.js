@@ -1,6 +1,8 @@
 import { useContext, useState } from "react";
-import axios from "axios";
 import { Link, useNavigate} from "react-router-dom";
+import axios from "axios";
+
+import Container from "./style";
 import UserContext from "../../../contexts/userContext";
 
 export default function LoginScreen() {
@@ -31,8 +33,10 @@ export default function LoginScreen() {
     
     }
 
-    return(<>
-            <h1>MyWallet</h1>
+    return(<Container>
+            <header>
+                <h1>MyWallet</h1>   
+            </header>
             <form>
                 <input type="text" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="E-mail" />
                 <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Senha" />
@@ -40,5 +44,5 @@ export default function LoginScreen() {
             </form>
             <Link to="/sign-up">Primeira vez? Cadastre-se</Link>
 
-        </>)
+        </Container>)
 }
