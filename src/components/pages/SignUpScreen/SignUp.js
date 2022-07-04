@@ -1,6 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import axios from "axios";
+import Container from "../LoginScreen/style";
 
 export default function SignUpScreen() {
     const [name, setName] = useState('');
@@ -24,7 +25,7 @@ async function handleSubmit(e) {
 
 }
 
-    return (<>
+    return (<Container>
         <div>
             <h1>MyWallet</h1>
             <form>
@@ -39,5 +40,5 @@ async function handleSubmit(e) {
         </div>
         
 
-    </>)
+    </Container>)
 }

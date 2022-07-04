@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
-const Container = styled.div`
+
+const Container = styled.main`
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -20,6 +21,7 @@ margin-top: calc(50vh - (295px / 2));
 
  h1 {
      font-family: 'Saira Stencil One', cursive;
+     margin-left: 113px;
     font-size: 32px;
      color: #FFFFFF;
      margin-bottom: 24px;
@@ -75,6 +77,6 @@ margin-top: calc(50vh - (295px / 2));
     color: #FFFFFF;
     text-decoration: none;
  }
-`
+ `
 
 export default Container;
